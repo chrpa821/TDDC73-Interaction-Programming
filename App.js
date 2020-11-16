@@ -15,6 +15,7 @@ import {
   Button,
   Alert,
   TextInput,
+  KeyboardAvoidingView,
 } from 'react-native';
 
 const App = () => {
@@ -29,23 +30,23 @@ const App = () => {
      <View style = {styles.buttons}>
        <Button
            title="Button"
-           onPress={() => Alert.alert('Right button pressed')}/>
+           onPress={() => Alert.alert('button pressed')}/>
        <Button
            title="Button"
-           onPress={() => Alert.alert('Right button pressed')}/>
+           onPress={() => Alert.alert('button pressed')}/>
        <Button
            title="Button"
-           onPress={() => Alert.alert('Right button pressed')}/>
+           onPress={() => Alert.alert('button pressed')}/>
        <Button
            title="Button"
-           onPress={() => Alert.alert('Right button pressed')}/>
+           onPress={() => Alert.alert('button pressed')}/>
      </View>
      <View style={styles.email}>
           <Text>Email</Text>
-       <TextInput style = {styles.emailInput}
-         autoCompleteType = "email"
-         onChangeText={text => onChangeText(text)}
-       />
+          <TextInput style = {styles.emailInput}
+            autoCompleteType = "email"
+            onChangeText={text => onChangeText(text)}
+          />
      </View>
    </View>
    );
@@ -70,17 +71,16 @@ const styles = StyleSheet.create({
   },
   email: {
     marginTop: 60,
-    marginLeft: 30,
     flex: 5,
-    flexDirection: "column",
-    alignContent:"space-between",
+    flexDirection: "row",
+    justifyContent:"space-around",
   },
   emailInput: {
-    alignSelf: "center",
-    marginRight: 10,
+    alignSelf:"flex-start",
     borderBottomColor: 'gray',
     borderBottomWidth: 1,
     width: 150,
+    marginRight: 70,
   },
 });
 
