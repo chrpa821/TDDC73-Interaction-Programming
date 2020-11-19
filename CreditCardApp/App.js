@@ -50,36 +50,43 @@ const App = () => {
           </View>
         </View>
       </ImageBackground>
-      <View style={styles.input}>
-        <View style={styles.inputContainer}>
-          <Text style={styles.inputText}>
-            Card Number
-          </Text>
-          <TextInput style={styles.inputTextBox}/>
-        </View>
-        <View style={styles.inputContainer}>
-          <Text style={styles.inputText}>
-            Card Holder
-          </Text>
-          <TextInput style={styles.inputTextBox}/>
-        </View>
-        <View style={styles.inputLastRow}>
-          <View>
-            <Text style={styles.inputText}>
-              Expiration Date
+      <View style={styles.form}>
+        <View style={styles.firstContainer}>
+          <View style={styles.inputContainer}>
+            <Text style={styles.smallText}>
+              Card Number
             </Text>
             <TextInput style={styles.inputTextBox}/>
           </View>
-          <View>
-            <TextInput style={{fontSize: 12, marginTop: 12}}/>
-          </View>
-          <View>
-            <Text style={styles.inputText}>
-              CVV
+          <View style={styles.inputContainer}>
+            <Text style={styles.smallText}>
+              Card Holder
             </Text>
             <TextInput style={styles.inputTextBox}/>
           </View>
-        </View>
+          <View style={styles.inputLastRow}>
+            <View style= {{width:"66%"}}>
+              <Text style={styles.smallText}>
+                Expiration Date
+              </Text>
+              <View style = {{ flexDirection: "row"}}>
+                <TextInput style={styles.smallMenu}/>
+                <TextInput style={styles.smallMenu}/>
+              </View>
+            </View>
+            <View style= {{width:"20%"}}>
+              <Text style={styles.smallText}>
+                CVV
+              </Text>
+              <TextInput style={styles.cvvInput}/>
+            </View>
+          </View>
+          <View style={styles.inputContainer}>
+            <Button
+              title="Submit"
+            />
+          </View>
+        </View>     
       </View>
    </View>
    );
@@ -97,10 +104,7 @@ const styles = StyleSheet.create({
     width: null,
     height: null,
     aspectRatio: 675/435,
-    borderBottomLeftRadius: 10,
-    borderBottomRightRadius: 10,
-    borderTopRightRadius: 10,
-    borderTopLeftRadius: 10,
+    borderRadius: 15,
     overflow: 'hidden',
     justifyContent: "space-between",
   },
@@ -132,25 +136,25 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   cardHolder: {
-    fontSize: 16,
+    fontSize: 12,
     color: "#D3D3D3",
   },
   fullName: {
-    fontSize: 16,
+    fontSize: 14,
     color: Colors.white,
   },
   cardExpire:{
     marginRight: 16,
   },
   expires:{
-    fontSize: 16,
+    fontSize: 12,
     color: "#D3D3D3",
   },
   mmyy:{
-    fontSize: 16,
+    fontSize: 14,
     color: Colors.white,
   },
-  input: {
+  form: {
     elevation: -1,
     backgroundColor: Colors.white,
     borderBottomLeftRadius: 10,
@@ -161,29 +165,42 @@ const styles = StyleSheet.create({
     margin: 16,
     top: -100,
   },
+  firstContainer:{
+    paddingTop: 100,
+  },
   inputContainer: {
-    top:100,
     margin: 16,
   },
-  inputText:{
+  smallText:{
     fontSize: 12,
   },
   inputTextBox:{
     marginTop: 5,
-    height: 60, 
     borderColor: '#DCDCDC', 
     borderWidth: 1,
-    borderBottomLeftRadius: 5,
-    borderBottomRightRadius: 5,
-    borderTopRightRadius: 5,
-    borderTopLeftRadius: 5,
+    borderRadius: 5,
   },
   inputLastRow:{
     margin: 16,
     flexDirection: "row",
     justifyContent: "space-between",
-
   },
+  smallMenu:{
+    marginTop: 5,
+    borderColor: '#DCDCDC', 
+    borderWidth: 1,
+    borderRadius: 5,
+    width: "45%",
+    marginRight: 16,
+  },
+  cvvInput:{
+    marginTop: 5,
+    borderColor: '#DCDCDC', 
+    borderWidth: 1,
+    borderRadius: 5,
+    width:"100%",  
+  },
+
 });
 
 export default App;
