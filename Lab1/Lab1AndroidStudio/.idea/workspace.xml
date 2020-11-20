@@ -5,38 +5,148 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:Lab1-AndroidStudio" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="bed6ea5f-8d4c-4f9a-8352-28fa5e9628be" name="Default Changelist" comment="" />
+    <list default="true" id="ccb9f202-e710-4b67-abc5-7b68c42936c9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/.buckconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/.flowconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/.prettierrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/.watchmanconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/__tests__/App-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/_BUCK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/build_defs.bzl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/debug.keystore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/debug/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/debug/java/com/creditcardapp/ReactNativeFlipper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/main/java/com/creditcardapp/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/main/java/com/creditcardapp/MainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/10.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/11.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/12.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/13.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/14.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/15.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/16.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/17.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/18.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/19.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/20.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/21.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/22.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/23.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/24.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/25.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/6.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/8.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/9.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/amex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/chip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/dinersclub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/discover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/jcb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/mastercard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/troy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/unionpay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/images/visa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/CreditCardApp-tvOS/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/CreditCardApp-tvOSTests/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/CreditCardApp.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/CreditCardApp.xcodeproj/xcshareddata/xcschemes/CreditCardApp-tvOS.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/CreditCardApp.xcodeproj/xcshareddata/xcschemes/CreditCardApp.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/CreditCardApp.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/CreditCardApp/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/CreditCardApp/AppDelegate.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/CreditCardApp/Images.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/CreditCardApp/Images.xcassets/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/CreditCardApp/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/CreditCardApp/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/CreditCardApp/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/CreditCardAppTests/CreditCardAppTests.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/CreditCardAppTests/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/Podfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/ios/Podfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/metro.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CreditCardApp/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/androidTest/java/com/example/lab1_android_studio/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/java/com/example/lab1_android_studio/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/drawable/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/app/src/test/java/com/example/lab1_android_studio/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab1AndroidStudio/settings.gradle" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,40 +158,21 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-    <option name="RESET_MODE" value="HARD" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1k9ucI9VvV6WaVUwIO2I0h7bjM2" />
+  <component name="ProjectId" id="1kWUwrOMIVN0tizoEy8o4vuC0Ot" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_API_30_x86" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-11-11T20:08:28.800Z" />
-    <property name="ResourceManagerPrefKey.ResourceType" value="DRAWABLE" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
-    </key>
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -154,86 +245,34 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bed6ea5f-8d4c-4f9a-8352-28fa5e9628be" name="Default Changelist" comment="" />
-      <created>1605125205341</created>
+      <changelist id="ccb9f202-e710-4b67-abc5-7b68c42936c9" name="Default Changelist" comment="" />
+      <created>1605816083448</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605125205341</updated>
+      <updated>1605816083448</updated>
     </task>
-    <task id="LOCAL-00001" summary="Revert &quot;finish lab 1 in android studio&quot;&#10;&#10;This reverts commit 6dd56dc2">
-      <created>1605134994358</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1605134994358</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="Lab1-AndroidStudio" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Revert &quot;finish lab 1 in android studio&quot;&#10;&#10;This reverts commit 6dd56dc2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;finish lab 1 in android studio&quot;&#10;&#10;This reverts commit 6dd56dc2" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="458" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605131592532">
+    <state x="100" y="122" width="1240" height="677" key="AVDManager" timestamp="1605859066427">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="458" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1605131592532" />
-    <state x="88" y="108" width="1240" height="677" key="AVDManager" timestamp="1605189771122">
+    <state x="100" y="122" width="1240" height="677" key="AVDManager/0.23.1440.877@0.23.1440.877" timestamp="1605859066427" />
+    <state width="1396" height="231" key="GridCell.Tab.0.bottom" timestamp="1605880543086">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="88" y="108" width="1240" height="677" key="AVDManager/0.23.1440.877@0.23.1440.877" timestamp="1605189771122" />
-    <state x="246" y="39" key="CommitChangelistDialog2" timestamp="1605134994065">
+    <state width="1396" height="231" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1605880543086" />
+    <state width="1396" height="231" key="GridCell.Tab.0.center" timestamp="1605880543086">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="246" y="39" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1605134994065" />
-    <state width="1398" height="231" key="GridCell.Tab.0.bottom" timestamp="1605129743747">
+    <state width="1396" height="231" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1605880543086" />
+    <state width="1396" height="231" key="GridCell.Tab.0.left" timestamp="1605880543085">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="231" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1605129743747" />
-    <state width="1398" height="231" key="GridCell.Tab.0.center" timestamp="1605129743746">
+    <state width="1396" height="231" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1605880543085" />
+    <state width="1396" height="231" key="GridCell.Tab.0.right" timestamp="1605880543086">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="231" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1605129743746" />
-    <state width="1398" height="231" key="GridCell.Tab.0.left" timestamp="1605129743745">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="231" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1605129743745" />
-    <state width="1398" height="231" key="GridCell.Tab.0.right" timestamp="1605129743746">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state width="1398" height="231" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1605129743746" />
-    <state x="359" y="230" key="MultipleFileMergeDialog" timestamp="1605134982319">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="359" y="230" key="MultipleFileMergeDialog/0.23.1440.877@0.23.1440.877" timestamp="1605134982319" />
-    <state x="421" y="216" width="598" height="490" key="find.popup" timestamp="1605132957623">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="421" y="216" width="598" height="490" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1605132957623" />
+    <state width="1396" height="231" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1605880543086" />
   </component>
 </project>

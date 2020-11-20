@@ -84,16 +84,16 @@ class MyBody extends StatelessWidget {
                     left: 80,
                     top: 30,
                   ),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.pink),
-                        ),
-                        focusedBorder: UnderlineInputBorder(
+                  child: TextField(
+                    decoration: InputDecoration(
+                      enabledBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: Colors.pink),
-                        ),
+                      ),
+                      focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.pink),
                       ),
                     ),
+                  ),
                 ),
               ],
             )

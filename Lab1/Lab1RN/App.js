@@ -15,7 +15,6 @@ import {
   Button,
   Alert,
   TextInput,
-  KeyboardAvoidingView,
 } from 'react-native';
 
 const App = () => {
