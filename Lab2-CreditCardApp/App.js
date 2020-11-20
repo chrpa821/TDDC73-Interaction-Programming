@@ -7,16 +7,19 @@ import {
   Button,
   TextInput,
   ImageBackground,
-  Menu
 } from 'react-native';
 
 import { Colors } from 'react-native/Libraries/NewAppScreen';
+
+import {Picker} from '@react-native-picker/picker';
 
 const cardImage = require('./images/2.jpeg');
 const chipImage = require('./images/chip.png');
 const visaImage = require('./images/visa.png');
 
-const cardRatio = window.width
+var state = {
+  language: 'java',
+};
 
 const App = () => {
   return (
@@ -28,7 +31,7 @@ const App = () => {
         </View>
         <View style={styles.rows}>
           <Text style={styles.cardNumber}>
-            ####   ####   ####   ####
+            ####  ####  ####  ####
           </Text>
         </View>
         <View style={styles.rows}>
@@ -70,8 +73,31 @@ const App = () => {
                 Expiration Date
               </Text>
               <View style = {{ flexDirection: "row"}}>
-                <TextInput style={styles.smallMenu}/>
-                <TextInput style={styles.smallMenu}/>
+                <Picker style={styles.smallMenu} mode="dropdown">
+                  <Picker.Item label="01" value="01" />
+                  <Picker.Item label="02" value="02" />
+                  <Picker.Item label="03" value="03" />
+                  <Picker.Item label="04" value="04" />
+                  <Picker.Item label="05" value="05" />
+                  <Picker.Item label="06" value="06" />
+                  <Picker.Item label="07" value="07" />
+                  <Picker.Item label="08" value="08" />
+                  <Picker.Item label="09" value="09" />
+                  <Picker.Item label="10" value="10" />
+                  <Picker.Item label="11" value="11" />
+                  <Picker.Item label="12" value="12" />
+                </Picker>
+                <Picker style={styles.smallMenu} mode="dropdown" >
+                  <Picker.Item label="2020" value="20" />
+                  <Picker.Item label="2021" value="21" />
+                  <Picker.Item label="2022" value="22" />
+                  <Picker.Item label="2023" value="23" />
+                  <Picker.Item label="2024" value="24" />
+                  <Picker.Item label="2025" value="25" />
+                  <Picker.Item label="2026" value="26" />
+                  <Picker.Item label="2027" value="27" />
+                  <Picker.Item label="2028" value="28" />
+                </Picker>
               </View>
             </View>
             <View style= {{width:"20%"}}>
@@ -190,8 +216,8 @@ const styles = StyleSheet.create({
     borderColor: '#DCDCDC', 
     borderWidth: 1,
     borderRadius: 5,
-    width: "45%",
-    marginRight: 16,
+    width: "55%",
+    paddingRight: 16,
   },
   cvvInput:{
     marginTop: 5,
