@@ -21,27 +21,59 @@ const visaImage = require('./images/visa.png');
 
 const App = () => {
 
-  const [number, setNumber] = useState('####  ####  ####  ####')
+  const [number, setNumber] = useState('')
   const [name, setName] = useState('FULL NAME')
   const [month, setMonth] = useState('MM')
   const [year, setYear] = useState('YY')
 
+  // const changeNumber = (input) => {
+
+  //   input.replace(/[^0-9]/g, '')
+
+  //   let temp = input.split(' ').join('');
+    
+  //   var newText = temp.replace(/[^0-9]/g, '')
+    
+  //   for(var i = 0; i < 16 - input.length; i++){
+  //     newText += '#';
+  //   }
+  //   if (newText.length > 0) {
+  //     newText = newText.match(new RegExp('.{1,4}', 'g')).join('  ');
+  //   }
+
+
+
+  //   setNumber(newText);
+  // }
+
+
+
   const changeNumber = (input) => {
 
     input.replace(/[^0-9]/g, '')
-    let formattedText = input.split(' ').join('');
+
+    var temp = input.split(' ').join('');
     
-    for(var i = 0; i < 16 - input.length; i++){
-      formattedText += '#';
-    }
-    if (formattedText.length > 0) {
-      formattedText = formattedText.match(new RegExp('.{1,4}', 'g')).join('  ');
+    var newText = temp.replace(/[^0-9]/g, '')
+    
+    setNumber(newText);
+  }
+
+  const displayNumber = () => {
+    var newText = number;
+
+    for(var i = 0; i < 16 - number.length; i++){
+      newText += '#';
     }
 
-    setNumber(formattedText);
+    if (newText.length > 0) {
+      newText = newText.match(new RegExp('.{1,4}', 'g')).join('  ');
+    }
+    return(newText);
   }
 
   const changeName = (input) => {
+
     var text = input.toUpperCase();
     setName(text);
   }
@@ -64,7 +96,7 @@ const App = () => {
             </View>
             <View style={styles.rows}>
               <Text style={styles.cardNumber}>
-                {number}
+                {displayNumber()}
               </Text>
             </View>
             <View style={styles.rows}>
@@ -92,7 +124,11 @@ const App = () => {
                 <Text style={styles.smallText}>
                   Card Number
                 </Text>
-                <TextInput style={styles.inputTextBox} keyboardType = 'number-pad' onChangeText ={(input) => changeNumber(input)} maxLength={16}/>
+                <TextInput style={styles.inputTextBox} 
+                          keyboardType = 'number-pad' 
+                          onChangeText ={(input) => changeNumber(input)} 
+                          maxLength = {16} 
+                          value = {number}/>
               </View>
               <View style={styles.inputContainer}>
                 <Text style={styles.smallText}>
