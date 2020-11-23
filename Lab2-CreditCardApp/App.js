@@ -17,6 +17,10 @@ import {Picker} from '@react-native-picker/picker';
 const cardImage = require('./images/2.jpeg');
 const chipImage = require('./images/chip.png');
 const visaImage = require('./images/visa.png');
+const amexImage = require('./images/amex.png');
+const mastercardImage = require('./images/mastercard.png');
+const troyImage = require('./images/troy.png');
+const discoverImage = require('./images/discover.png');
 
 
 const App = () => {
@@ -26,14 +30,50 @@ const App = () => {
   const [month, setMonth] = useState('MM')
   const [year, setYear] = useState('YY')
   const [isFlipped, setIsFlipped] = useState(true)
+  const [cvv, setCVV] = useState('')
+  const [type, setType] = useState('visa')
+
+  const cardType = () => {
+    var _number = number;
+    let re = new RegExp("^4");
+    if (_number.match(re) != null){
+      setType("visa");
+      return;
+    } 
+
+    re = new RegExp("^(34|37)");
+    if(_number.match(re) != null){
+      setType("amex");
+      return;
+    } 
+
+    re = new RegExp("^5[1-5]");
+    if (_number.match(re) != null){
+      setType("mastercard");
+      return;
+    } 
+
+    re = new RegExp("^6011");
+    if (_number.match(re) != null){
+      setType("discover");
+      return;
+    } 
+    
+    re = new RegExp('^9792')
+    if (_number.match(re) != null){
+      setType('troy');
+      return;
+    } 
+
+    //default
+    setType('visa');
+  }
 
   const changeNumber = (input) => {
-
-    input.replace(/[^0-9]/g, '')
-
-    var temp = input.split(' ').join('');
-    
+    var temp = input;
     var newText = temp.replace(/[^0-9]/g, '')
+
+    cardType();
     
     setNumber(newText);
   }
@@ -45,14 +85,19 @@ const App = () => {
       newText += '#';
     }
 
-    if (newText.length > 0) {
+    if (type != 'amex') {
       newText = newText.match(new RegExp('.{1,4}', 'g')).join('  ');
     }
+    else {
+      newText = newText.substring(0,4) + '  ' + newText.substring(4,10) + '  ' + newText.substring(10,15);
+      
+      return newText;
+    }
+      
     return(newText);
   }
 
   const changeName = (input) => {
-
     var text = input.toUpperCase();
     setName(text);
   }
@@ -65,14 +110,42 @@ const App = () => {
     setYear(input);
   }
 
+  const flip = () => {
+    setIsFlipped(!isFlipped);
+  } 
+
+  const changeCVV = (input) => {
+    var temp = input.split(' ').join('');
+    var newText = temp.replace(/[^0-9]/g, '')
+
+    setCVV(newText);
+  }
+
+  const displayCVV = () => {
+    var text = '';
+
+    for(var i = 0; i < cvv.length; i++){
+      text += '*';
+    }
+    return (text);
+  }
+
+  const displayNetwork = () => {
+    if(type == 'visa') return <Image source={visaImage} style={styles.network}  />;
+    if(type == 'amex') return <Image source={amexImage} style={styles.network}  />;
+    if(type == 'mastercard') return <Image source={mastercardImage} style={styles.network}  />;
+    if(type == 'discover') return <Image source={discoverImage} style={styles.network}  />;
+    if(type == 'troy') return <Image source={troyImage} style={styles.network}  />;
+  }
+
   return (
     <ScrollView>
       <View style={styles.container}>
-        {!isFlipped ?
+        {isFlipped ?
         <ImageBackground source={cardImage} style={styles.card} >
           <View style={styles.rows}>
             <Image source={chipImage} style={styles.chip} />
-            <Image source={visaImage} style={styles.network}  />
+            {displayNetwork()}
           </View>
           <View style={styles.rows}>
             <Text style={styles.cardNumber}>
@@ -105,7 +178,7 @@ const App = () => {
           </View>
           <View style={styles.backrow2}>
             <Text style={{alignSelf:"flex-end", marginRight:22, color: "#FFFFFF", marginBottom:2, fontSize: 12}}>CVV</Text>
-            <TextInput style={styles.cvvBackInput} />
+            <TextInput style={styles.cvvBackInput} value={displayCVV()} textAlign="right"/>
           </View>
           <View style={styles.backrow2}>
             <Image source={visaImage} style={styles.networkBack} />
@@ -152,7 +225,7 @@ const App = () => {
                     <Picker.Item label="11" value="11" />
                     <Picker.Item label="12" value="12" />
                   </Picker>
-                  <Picker style={styles.smallMenu} mode="dropdown"onValueChange={(itemValue) => changeYear(itemValue)} >
+                  <Picker style={styles.smallMenu} mode="dropdown" onValueChange={(itemValue) => changeYear(itemValue)} >
                     <Picker.Item label="2020" value="20" />
                     <Picker.Item label="2021" value="21" />
                     <Picker.Item label="2022" value="22" />
@@ -169,7 +242,12 @@ const App = () => {
                 <Text style={styles.smallText}>
                   CVV
                 </Text>
-                <TextInput style={styles.cvvInput}/>
+                <TextInput style={styles.cvvInput} 
+                            onFocus={() => flip()} 
+                            onBlur={() => flip()} 
+                            maxLength={4}
+                            onChangeText ={(input) => changeCVV(input)}
+                            value = {cvv}/>
               </View>
             </View>
             <View style={styles.inputContainer}>
