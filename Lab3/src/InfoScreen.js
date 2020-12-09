@@ -1,18 +1,15 @@
 import React from 'react'
-import { Text} from 'react-native'
+import { Text } from 'react-native'
 import { gql, useQuery } from '@apollo/client'
-
-import { useNavigation } from '@react-navigation/native';
 
 import styles from './styles'
 
 import {
     View,
-    TouchableHighlight,
     ScrollView,
   } from 'react-native';
 
-const REPO_QUERY = gql`
+const INFO_QUERY = gql`
   query{
     search(type: REPOSITORY, first: 20, query: "language: any") {
       nodes {
@@ -27,31 +24,26 @@ const REPO_QUERY = gql`
   }
 `;
 
-function Repos() {
-    const { loading, error, data } = useQuery(REPO_QUERY);
+function Repo() {
+    const { loading, error, data } = useQuery(INFO_QUERY);
 
     if (loading) return <Text>Loading....</Text>
     if (error) return <Text>Error :(</Text>
 
-    const navigation = useNavigation();
-
     return data.search.nodes.map(({ name, stargazerCount, description}) => (
-      <TouchableHighlight onPress={() => navigation.navigate('Info')} key={name} style={styles.button}>
-        <View >
+        <View style={styles.button}>
             <Text style={styles.title}>{name}</Text>
             <Text style={styles.stars}>Stars: {stargazerCount}</Text>
             <Text style={styles.description}>{description}</Text>
         </View>
-      </TouchableHighlight>
     ));
 }
 
-export default ({navigation}) => {
+export default ({route}) => {
 
-  return (
-    <ScrollView style={styles.container}>
-      {Repos()}
-    </ScrollView>
-  );
-
+    return (
+      <ScrollView>
+        <Text>It works!</Text>
+      </ScrollView>
+    );
   }

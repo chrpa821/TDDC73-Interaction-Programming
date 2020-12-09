@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
 import HomeScreen from './src/HomeScreen'
+import InfoScreen from './src/InfoScreen'
 
 import { screenOptions } from './src/styles'
 
@@ -19,6 +20,11 @@ const App = () => {
             name="Home"
             component={HomeScreen}
             options={{ title: 'Top 20 Trending Repos' }}
+          />
+        <Stack.Screen
+            name="Info"
+            component={InfoScreen}
+            options={{ title: 'Repo Information' }}
           />
       </Stack.Navigator>
     </NavigationContainer>
