@@ -10,17 +10,16 @@ import { screenOptions } from './src/styles'
 
 const Stack = createStackNavigator()
 
-
 const App = () => {
 
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home" screenOptions={screenOptions}>
-      <Stack.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{ title: 'Top 20 Trending Repositories on GitHub' }}
-        />
+        <Stack.Screen
+            name="Home"
+            component={HomeScreen}
+            options={{ title: 'Top 20 Trending Repos' }}
+          />
       </Stack.Navigator>
     </NavigationContainer>
   );

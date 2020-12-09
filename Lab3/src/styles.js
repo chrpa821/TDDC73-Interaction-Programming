@@ -1,32 +1,41 @@
 import { StyleSheet } from 'react-native'
 
-export const PINK = '#4d4d4d'
+export const GRAY = '#4d4d4d'
 
 export const screenOptions = {
   headerStyle: {
-    backgroundColor: PINK,
+    backgroundColor: GRAY,
   },
   headerTintColor: '#fff',
 }
 
 export default StyleSheet.create({
-  centered: {
-    flex: 1,
-    justifyContent: 'center',
+  container: {
+    backgroundColor: '#292929',
+  },
+  button: {
+    marginTop: 30,
+    width: '95%',
     alignItems: 'center',
+    alignSelf: 'center',
+    backgroundColor: '#4a4a4a',
+    borderRadius: 5,
+    padding: 5
   },
-  item: {
-    paddingTop: 16,
-    paddingBottom: 16,
-    paddingLeft: 20,
-    paddingRight: 20,
-    borderBottomWidth: 1,
-    borderBottomColor: '#cccccc',
-  },
-  header: {
+  title: {
     fontWeight: 'bold',
+    textAlign: 'center',
+    padding: 3,
+    color: 'white'
   },
-  subheader: {
-    paddingTop: 10,
+  description: {
+    textAlign: 'left',
+    padding: 3,
+    color: 'white'
   },
+  stars: {
+    textAlign: 'left',
+    padding: 3,
+    color: 'white'
+  }
 })
