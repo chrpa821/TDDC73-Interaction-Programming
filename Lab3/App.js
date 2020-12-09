@@ -1,20 +1,28 @@
 import React from 'react';
 
+//navigation stack
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+
 import HomeScreen from './src/HomeScreen'
 
-import {
-  SafeAreaView,
-  StyleSheet,
-  View,
-  Text,
-} from 'react-native';
+import { screenOptions } from './src/styles'
+
+const Stack = createStackNavigator()
+
 
 const App = () => {
 
   return (
-    <SafeAreaView>
-      <HomeScreen/>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home" screenOptions={screenOptions}>
+      <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{ title: 'Top 20 Trending Repositories on GitHub' }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 

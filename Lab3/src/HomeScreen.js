@@ -11,7 +11,7 @@ import {
 
 const REPO_QUERY = gql`
   query{
-    search(type: REPOSITORY, first: 10, query: "language: any") {
+    search(type: REPOSITORY, first: 20, query: "language: any") {
       nodes {
         ... on Repository {
           name
@@ -25,18 +25,18 @@ const REPO_QUERY = gql`
 
 function Repos() {
     const { loading, error, data } = useQuery(REPO_QUERY);
-    
+
     if (loading) return <Text>Loading...</Text>
     if (error) return <Text>Error :(</Text>
-    
+
     return data.search.nodes.map(({ name, stargazerCount, id }) => (
-      <View key={name}>
-        <Text>
-          {name}: {stargazerCount}
-        </Text>
-      </View>
+        <View key={name}>
+            <Text>
+                {name}: {stargazerCount}
+            </Text>
+        </View>
     ));
-    }
+}
 
 export default () => {
 

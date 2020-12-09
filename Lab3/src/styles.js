@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-export const PINK = '#ff5dc8'
+export const PINK = '#4d4d4d'
 
 export const screenOptions = {
   headerStyle: {
